@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Glimpse</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Logout</string>
+    <string name="title_activity_login">Login</string>
+    <string name="username_hint">Username</string>
+    <string name="password_field">Password</string>
+    <string name="title_activity_sign_up">SignUp</string>
+    <string name="login_button">Login</string>
+    <string name="sign_up_text">Sign Up</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="error_title">Error</string>
+    <string name="error_message">All fields must be filled</string>
+    <string name="sign_up_error_title">Sign up error</string>
+    <string name="sign_up_error_message">There was an error with sign up</string>
+    <string name="login_error">There was an error logging in</string>
+    <string name="empty_inbox">No new messages</string>
+    <string name="empty_friends">Add friends to begin</string>
+    <string name="tab_inbox_label">Inbox</string>
+    <string name="tab_friends_label">Friends</string>
+    <string name="title_activity_edit_friends">EditFriends</string>
+    <string name="edit_friends">Edit friends</string>
+    <string name="edit_friends_label">Edit friends</string>
+    <string name="error_notification">There was an error!</string>
+
+</resources>
