@@ -1,0 +1,73 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="50dp"
+    android:paddingRight="50dp"
+    android:background="@color/purple"
+    tools:context="com.chrisgcasey.glimpse.com.chrisgcasey.glimpse.ui.SignUpActivity">
+
+    <TextView
+        style="@style/app_name_textView"
+        android:id="@+id/title_signUp" />
+
+    <LinearLayout
+        android:id="@+id/layout_userInfoBox"
+        style="@style/UserInfoBox"
+        android:orientation="vertical">
+
+        <EditText
+            style="@style/EditTextAppTheme"
+            android:id="@+id/newUserName"
+            android:hint="@string/new_username" >
+            <requestFocus/>
+        </EditText>
+
+
+        <EditText
+            style="@style/EditTextAppTheme"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:id="@+id/newPassword"
+            android:hint="@string/new_password" />
+
+        <EditText
+            style="@style/EditTextAppTheme"
+            android:id="@+id/newEmail"
+            android:inputType="textEmailAddress"
+            android:hint="@string/email_hint"
+            />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/button_divider"
+        android:src="@drawable/button_divider"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_userInfoBox"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/button_divider" />
+
+    <Button
+        android:id="@+id/button_save"
+        style="@style/button_userInfo"
+        android:text="@string/button_save"
+        android:layout_below="@id/layout_userInfoBox"
+        android:layout_toLeftOf="@id/button_divider"
+        android:layout_marginRight="0dp"
+        android:background="@drawable/button_custom"/>
+
+    <Button
+        android:id="@+id/button_cancel"
+        style="@style/button_userInfo"
+        android:text="@string/button_cancel"
+        android:layout_marginLeft="0dp"
+        android:layout_below="@id/layout_userInfoBox"
+        android:layout_toRightOf="@id/button_divider"
+        android:layout_toEndOf="@id/button_divider"
+        android:background="@drawable/button_custom"/>
+
+
+
+
+</RelativeLayout>

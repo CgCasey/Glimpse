@@ -1,0 +1,67 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="50dp"
+    android:paddingRight="50dp"
+    android:background="@color/purple"
+    tools:context="com.chrisgcasey.glimpse.com.chrisgcasey.glimpse.ui.LoginActivity"
+    android:id="@+id/activity_login">
+
+    <TextView
+        style="@style/app_name_textView"
+        android:id="@+id/title" />
+
+    <LinearLayout
+        android:id="@+id/login_linear_layout"
+        style="@style/UserInfoBox" >
+
+        <EditText
+            style="@style/EditTextAppTheme"
+            android:id="@+id/userNameField"
+            android:paddingTop="@dimen/user_input_padding"
+            android:paddingBottom="@dimen/user_input_padding"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/username_hint" >
+            <requestFocus/>
+        </EditText>
+
+        <EditText
+            style="@style/EditTextAppTheme"
+            android:inputType="textPassword"
+            android:id="@+id/passwordField"
+            android:paddingTop="@dimen/user_input_padding"
+            android:paddingBottom="@dimen/user_input_padding"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/password_field"
+            android:textColorHint="@color/purple"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/loginButton"
+        android:text="@string/login_button"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/purple"
+        android:layout_below="@id/login_linear_layout"
+        style="@style/button_userInfo"
+        android:background="@drawable/button_custom"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sign_up_text"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:id="@+id/signUpText"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/loginButton"
+        android:paddingTop="20dp"
+        android:focusableInTouchMode="true"/>
+
+
+</RelativeLayout>

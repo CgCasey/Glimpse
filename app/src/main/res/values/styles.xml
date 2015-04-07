@@ -1,8 +1,145 @@
 <resources>
 
-    <!-- Base application theme. -->
-    <style name="AppTheme" parent="android:Theme.Holo.Light.DarkActionBar">
-        <!-- Customize your theme here. -->
+
+    <style name="Theme.Glimpse" parent="@android:style/Theme.Holo.Light">
+        <item name="android:actionBarItemBackground">@drawable/selectable_background_glimpse</item>
+        <item name="android:popupMenuStyle">@style/PopupMenu.Glimpse</item>
+        <item name="android:dropDownListViewStyle">@style/DropDownListView.Glimpse</item>
+        <item name="android:actionBarTabStyle">@style/ActionBarTabStyle.Glimpse</item>
+        <item name="android:actionDropDownStyle">@style/DropDownNav.Glimpse</item>
+        <item name="android:actionBarStyle">@style/ActionBar.Solid.Glimpse</item>
+        <item name="android:actionModeBackground">@drawable/cab_background_top_glimpse</item>
+        <item name="android:actionModeSplitBackground">@drawable/cab_background_bottom_glimpse</item>
+        <item name="android:actionModeCloseButtonStyle">@style/ActionButton.CloseMode.Glimpse</item>
+        <item name="android:editTextStyle">@style/EditTextAppTheme</item>
+        <item name="android:imageButtonStyle">@style/ImageButtonAppTheme</item>
+        <item name="android:actionOverflowButtonStyle">@style/Theme.Glimpse.Overflow</item>
+        <item name="android:listViewStyle">@style/Theme.Glimpse.LightPurpleBackground</item>
+        <item name="android:gridViewStyle">@style/Theme.Glimpse.LightPurpleBackground</item>
     </style>
+
+    <style name="Theme.Glimpse.LightPurpleBackground">
+        <item name="android:background">@color/lilac_purple_button</item>
+    </style>
+
+    <style name="Theme.Glimpse.Overflow" parent="@android:style/Widget.ActionButton.Overflow">
+        <item name="android:src">@drawable/ic_menu_overflow</item>
+    </style>
+
+    <style name="ActionBar.Solid.Glimpse" parent="@android:style/Widget.Holo.Light.ActionBar.Solid">
+        <item name="android:background">@drawable/ab_solid_glimpse</item>
+        <item name="android:backgroundStacked">@drawable/ab_stacked_solid_glimpse</item>
+        <item name="android:backgroundSplit">@drawable/ab_background_textured_glimpse</item>
+        <item name="android:progressBarStyle">@style/ProgressBar.Glimpse</item>
+        <item name="android:titleTextStyle">@style/ActionBar.Solid.Glimpse.TitleTextStyle</item>
+    </style>
+
+    <style name="ActionBar.Solid.Glimpse.TitleTextStyle"
+        parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/icon_purple_color</item>
+        </style>
+
+
+
+
+    <style name="ActionBar.Transparent.Glimpse" parent="@android:style/Widget.Holo.Light.ActionBar">
+        <item name="android:background">@drawable/ab_transparent_glimpse</item>
+        <item name="android:progressBarStyle">@style/ProgressBar.Glimpse</item>
+        <item name="android:backgroundStacked">@drawable/ab_stacked_solid_glimpse</item>
+
+    </style>
+
+    <style name="PopupMenu.Glimpse" parent="@android:style/Widget.Holo.Light.ListPopupWindow">
+        <item name="android:popupBackground">@drawable/menu_dropdown_panel_glimpse</item>
+    </style>
+
+    <style name="DropDownListView.Glimpse" parent="@android:style/Widget.Holo.Light.ListView.DropDown">
+        <item name="android:listSelector">@drawable/selectable_background_glimpse</item>
+    </style>
+
+    <style name="ActionBarTabStyle.Glimpse" parent="@android:style/Widget.Holo.Light.ActionBar.TabView">
+        <item name="android:background">@drawable/tab_indicator_ab_glimpse</item>
+    </style>
+
+    <style name="DropDownNav.Glimpse" parent="@android:style/Widget.Holo.Light.Spinner">
+        <item name="android:background">@drawable/spinner_background_ab_glimpse</item>
+        <item name="android:popupBackground">@drawable/menu_dropdown_panel_glimpse</item>
+        <item name="android:dropDownSelector">@drawable/selectable_background_glimpse</item>
+    </style>
+
+    <style name="ProgressBar.Glimpse" parent="@android:style/Widget.Holo.Light.ProgressBar.Horizontal">
+        <item name="android:progressDrawable">@drawable/progress_horizontal_glimpse</item>
+    </style>
+
+    <style name="ActionButton.CloseMode.Glimpse" parent="@android:style/Widget.Holo.Light.ActionButton.CloseMode">
+        <item name="android:background">@drawable/btn_cab_done_glimpse</item>
+    </style>
+
+    <!-- this style is only referenced in a Light.DarkActionBar based theme -->
+    <style name="Theme.Glimpse.Widget" parent="@android:style/Theme.Holo">
+        <item name="android:popupMenuStyle">@style/PopupMenu.Glimpse</item>
+        <item name="android:dropDownListViewStyle">@style/DropDownListView.Glimpse</item>
+    </style>
+
+
+
+
+
+
+
+    <style name="UserInfoBox">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">100dp</item>
+        <item name="android:layout_marginLeft">@dimen/activity_horizontal_margin</item>
+        <item name="android:layout_marginRight">@dimen/activity_horizontal_margin</item>
+        <item name="android:layout_marginBottom">0dp</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <style name="app_name_textView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">25dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">50sp</item>
+        <item name="android:text">@string/app_name</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceLarge</item>
+    </style>
+
+    <style name="user_input_fields">
+        <item name="android:paddingTop">@dimen/user_input_padding</item>
+        <item name="android:paddingBottom">@dimen/user_input_padding</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+    <style name="button_userInfo">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/activity_horizontal_margin</item>
+        <item name="android:layout_marginRight">@dimen/activity_horizontal_margin</item>
+        <item name="android:textColor">@color/purple</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="EditTextAppTheme" parent="android:Widget.EditText">
+        <item name="android:background">@drawable/apptheme_edit_text_holo_dark</item>
+        <item name="android:paddingTop">@dimen/user_input_padding</item>
+        <item name="android:paddingBottom">@dimen/user_input_padding</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:textColorHint">@color/purple</item>
+    </style>
+
+
+
+    <style name="ImageButtonAppTheme" parent="android:Widget.ImageButton">
+        <item name="android:background">@drawable/apptheme_btn_default_holo_dark</item>
+    </style>
+
 
 </resources>

@@ -24,5 +24,31 @@
     <string name="edit_friends">Edit friends</string>
     <string name="edit_friends_label">Edit friends</string>
     <string name="error_notification">There was an error!</string>
+    <string name="menu_camera_label">Camera</string>
+    <string name="error_general">Sorry, there was an error</string>
+    <string name="video_file_size_warning">The selected video must be less than 10 MB</string>
+    <string name="error_file">There was an error with the selected file</string>
+    <string name="error_file_size_too_large">File size too large!</string>
+
+    <string-array name="camera_choices">
+        <item name="picture_take">Take Picture</item>
+        <item name="picture_choose">Choose Picture</item>
+        <item name="video_shoot">Shoot Video</item>
+        <item name="video_choose">Choose Video</item>
+    </string-array>
+
+    <string name="title_activity_recipients">Recipients</string>
+    <string name="string_empty_recipients">Choose some friends first!</string>
+    <string name="menu_send_label">Send</string>
+    <string name="error_send">Cannot send!</string>
+    <string name="toast_message_sent">Message Sent!</string>
+    <string name="message_icon">Icon</string>
+    <string name="title_activity_view_image">Message</string>
+    <string name="email_hint">New Email</string>
+    <string name="new_username">New Username</string>
+    <string name="new_password">New Password</string>
+    <string name="button_save">Save</string>
+    <string name="button_cancel">Cancel</string>
+    <string name="button_divider">Button divider</string>
 
 </resources>

@@ -2,12 +2,12 @@ package com.chrisgcasey.glimpse;
 
 
 import android.content.Context;
-import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
-
+import com.chrisgcasey.glimpse.com.chrisgcasey.glimpse.ui.FriendsFragment;
+import com.chrisgcasey.glimpse.com.chrisgcasey.glimpse.ui.InboxFragment;
 
 
 /**
