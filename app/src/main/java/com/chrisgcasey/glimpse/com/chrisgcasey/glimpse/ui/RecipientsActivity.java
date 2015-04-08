@@ -36,11 +36,11 @@ import java.util.List;
 public class RecipientsActivity extends ListActivity {
 
     //1 get friends from parse.com
-    //2 create listadapter
+    //2 create listAdapter
     //3 populate list with friends
 
     //create send action bar icon
-    //create menuitem member variable
+    //create menuItem member variable
 
     public static final String TAG = RecipientsActivity.class.getSimpleName();
 
